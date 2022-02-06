@@ -58,6 +58,8 @@ class MainActivity : AppCompatActivity() {
         Glide.with(this)
 //                .asGif()
             .load(db.getURL(counter))
+            .error(R.drawable.ic_sync_problem)
+            .placeholder(R.drawable.ic_loading1)
             .into(imgP)
         binding.picText.setText(db.getDescr(counter))
     }
