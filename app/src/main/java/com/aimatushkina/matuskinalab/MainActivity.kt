@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
 
     fun donlowder(counter:Int){
         val imgP = binding.imageView1
-        println(counter)
         Glide.with(this)
 //                .asGif()
             .load(db.getURL(counter))
